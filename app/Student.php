@@ -5,8 +5,6 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
-
-
 {
 
     public function classes()
@@ -18,9 +16,6 @@ class Student extends Model
     {
         $this->hasMany('App\Absense');
     }
-
-
-
 
     //
 }

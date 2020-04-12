@@ -14,9 +14,7 @@ class CreateAffectsTable extends Migration
     public function up()
     {
         Schema::create('affects', function (Blueprint $table) {
-          //  $table->bigIncrements('id');
-
-          $table->bigInteger('id_teacher')->unsigned();
+            $table->bigInteger('id_teacher')->unsigned();
           $table->bigInteger('id_modul')->unsigned();
 
           $table->foreign('id_teacher')->references('id')->on('teachers');

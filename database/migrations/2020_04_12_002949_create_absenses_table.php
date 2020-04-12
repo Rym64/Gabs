@@ -15,6 +15,7 @@ class CreateAbsensesTable extends Migration
     {
         Schema::create('absenses', function (Blueprint $table) {
             $table->bigIncrements('id');
+
             $table->unsignedBigInteger('code_student');
             $table->unsignedBigInteger('id_seance');
             $table->dateTime('date_abs');
@@ -22,6 +23,7 @@ class CreateAbsensesTable extends Migration
             $table->timestamps();
             $table->foreign('code_student')->references('id')->on('students');
             $table->foreign('id_seance')->references('id')->on('seances');
+           
         });
     }
 

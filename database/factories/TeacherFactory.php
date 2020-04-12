@@ -20,6 +20,7 @@ $factory->define(Teacher::class, function (Faker $faker) {
         'picture_teacher' => 'http://lorempixel.com/640/480/people/'.$faker->randomDigitNotNull,
         'created_at' => now(),
        'updated_at' => now(),
+
         //
     ];
 });

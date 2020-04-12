@@ -1,9 +1,8 @@
 <?php
-
-use App\Seance;
+use App\Student;
 use Illuminate\Database\Seeder;
 
-class SeanceSeeder extends Seeder
+class StudentsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +11,8 @@ class SeanceSeeder extends Seeder
      */
     public function run()
     {
-        factory(Seance::class, 10)->create();
+        factory(Student::Class,2)->create();
+
         //
     }
 }

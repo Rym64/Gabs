@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Affect extends Model
 {
+
     public function teachers()
     {
        $this->belongsTo('App\Teacher');
@@ -15,8 +16,5 @@ class Affect extends Model
     {
        $this->belongsTo('App\Modul');
     }
-    
-
-
     //
 }

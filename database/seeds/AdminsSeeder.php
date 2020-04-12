@@ -1,8 +1,8 @@
 <?php
-
+use App\Admin;
 use Illuminate\Database\Seeder;
 
-class AffectSeeder extends Seeder
+class AdminsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,8 @@ class AffectSeeder extends Seeder
      */
     public function run()
     {
+        factory(Admin::class,2)->create();
+
         //
     }
 }

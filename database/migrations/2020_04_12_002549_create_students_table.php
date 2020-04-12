@@ -15,7 +15,6 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->bigIncrements('id');
-
             $table->unsignedBigInteger('id_class');
             $table->string('first_name');
             $table->string('last_name');
@@ -26,6 +25,7 @@ class CreateStudentsTable extends Migration
             $table->string('phone_stud');
             $table->string('picture_stud');
             $table->foreign('id_class')->references('id')->on('classes');
+
             $table->timestamps();
         });
     }

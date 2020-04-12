@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Teacher extends Model
 {
-
     public function classes()
     {
        $this->belongsTo('App\Classe');
@@ -25,5 +24,6 @@ class Teacher extends Model
      $this->hasMany('App\Seance');
     }
 
+    //
     //
 }

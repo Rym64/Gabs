@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Absense extends Model
 {
+
     public function students()
     {
      $this->belongsTo('App\Student');
@@ -17,8 +18,6 @@ class Absense extends Model
     {
      $this->belongsTo('App\Seance');
     }
-
- 
 
 
     //

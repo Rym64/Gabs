@@ -21,6 +21,7 @@ class CreateSeancesTable extends Migration
 
             $table->timestamps();
             $table->foreign('id_teacher')->references('id')->on('teachers');
+        
         });
     }
 

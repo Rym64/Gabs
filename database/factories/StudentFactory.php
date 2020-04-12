@@ -8,7 +8,6 @@ use Faker\Generator as Faker;
 
 $factory->define(Student::class, function (Faker $faker) {
     return [
-
         'id_class' => Classe::get('id')->random(),
         'first_name'=>$faker->firstNameFemale,
         'last_name'=>$faker->lastName,
@@ -20,7 +19,6 @@ $factory->define(Student::class, function (Faker $faker) {
         'picture_stud' => 'http://lorempixel.com/640/480/people/'.$faker->randomDigitNotNull,
         'created_at' => now(),
         'updated_at' => now()
-
         //
     ];
 });

@@ -1,8 +1,8 @@
 <?php
-use App\Modul;
+use App\Seance;
 use Illuminate\Database\Seeder;
 
-class ModulSeeder extends Seeder
+class SeancesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -10,7 +10,9 @@ class ModulSeeder extends Seeder
      * @return void
      */
     public function run()
-    { factory(Modul::class, 50)->create();
+    {
+
+        factory(Seance::class, 10)->create();
         //
     }
 }

@@ -1,9 +1,9 @@
 <?php
+use App\Affect;
 
-use App\Absense;
 use Illuminate\Database\Seeder;
 
-class AbsenseSeeder extends Seeder
+class AffectsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,10 +12,8 @@ class AbsenseSeeder extends Seeder
      */
     public function run()
     {
-        factory(Absense::class, 10)->create();
-
-
-
+        factory(Affect::class,2)->create();
+        
         //
     }
 }

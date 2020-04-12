@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Seance extends Model
 {
+
     public function teacher()
     {
        $this->belongsTo('App\Teacher');

@@ -10,18 +10,20 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {$this->call([
-        // $this->call(UsersTableSeeder::class);
-     
-        AdminSeeder::class,
-        ClasseSeeder::class,
-       StudentSeeder::class,
-     ModulSeeder::class,
-        TeacherSeeder::class,
-        AffectSeeder::class,
-        SeanceSeeder::class,
-      AbsenseSeeder::class,
-      UsersSeeder::class,
+    {
+      $this->call([
+        UsersSeeder::class,
+        AdminsSeeder::class,
+        ClassesSeeder::class,
+       StudentsSeeder::class,
+        ModulsSeeder::class,
+        TeachersSeeder::class,
+        AffectsSeeder::class,
+        SeancesSeeder::class,
+        AbsensesSeeder::class,
+
+    
       ]);
+        // $this->call(UsersTableSeeder::class);
     }
 }
